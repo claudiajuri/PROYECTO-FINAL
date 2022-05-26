@@ -1,0 +1,30 @@
+$color-violeta: rgb(59, 5, 87);
+$color-rosa: rgb(247, 0, 255);
+$color-gris: rgb(44, 41, 41);
+$color-turquesa:rgb(34, 188, 199);
+$color-negro: black;
+$cursiva: italic;
+$fondo-Fuccia: #FA00AA;
+
+
+@mixin grid-template-areas($grid-template-areas) {
+  display: grid;
+  grid-template-areas: $grid-template-areas
+}
+
+@mixin grid-imagenes($grid-template-columns) {
+  display: grid;
+  grid-template-columns: $grid-template-columns;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+@mixin card($linear-gradient) {
+  border-radius: 1em;
+  padding: 1.5rem;
+  margin: 3rem;
+  background-image: $linear-gradient;
+}
